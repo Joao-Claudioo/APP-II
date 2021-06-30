@@ -1,0 +1,233 @@
+void main() {
+ 
+  //lista com valores inteiros
+  List<int> numerosInteiros = [30, 60, 90, 120, 150, 180];
+  print(numerosInteiros);
+  
+  //lista com valores genéricos
+  List dadosGenericos = [5, "Anos", true, "Ana Clara", true, "Criança", true];
+  print(dadosGenericos);
+  
+  //lista vazia escalável
+  List<int> lista = new List.empty(growable: true);
+  print(lista);
+  
+  //outra forma de lista vazia mas não verdadeira
+  print([]);
+  
+}
+********************************************************************************
+void main() {
+ 
+ var lista = new List<int>.generate(10, (i) => i + 1);
+  print("Lista = $lista");
+  print(lista.length);
+  
+  for(int i = 0; i < lista.length ; i++){
+    print('${[i]}');
+  }
+ }
+******************************************************************************
+void main() {
+ 
+ List<int> lista_de_inteiros = [1, 2, 3, 4, 5, 6];
+  var lista_de_strings = ["A", "B", "C", "D", "E"];
+  const lista_de_numeros_com_precisao = [12.3, 25.84, 2.25, 78.96, 81.06,];
+  print(lista_de_inteiros);
+  print(lista_de_strings);
+  print(lista_de_numeros_com_precisao);
+  
+  
+ }
+******************************************************************************
+void main() {
+ 
+ List<int> lista = new List.empty(growable: true);
+  
+  //método para adicionar elemnetos na lista
+  
+  lista.add(100);
+  lista.add(200);
+  lista.add(300);
+  
+  print(lista);
+  
+  List nomes = [];
+  
+  nomes.add("Paulo");
+  nomes.add("João");
+  nomes.add("Roberto");
+  
+  print(nomes);
+  
+ }
+********************************************************************************
+List<String> jogadores = ["Fallen", "Nesk", "Astro", "Platão", "V"];
+  print("Os melhores de todos os tempos");
+  print(jogadores[1]);
+  print(jogadores);
+*******************************************************************************
+void main() {
+  
+List fruta = ["banana", "uva", "melao", "abacaxi", "maracuja"];
+  
+  //metodo para remover elemento da lista
+  fruta.remove("banana");
+  print(fruta);
+******************************************************************************
+void main() {
+ 
+ List<String> vingadores = ["homen de ferro",
+                           "Loki",
+                           "Thor",
+                           "Hulk"
+                           "Viuva Negra",
+                           "Visão",
+                           "Feiticeira Scarlat",
+                           "Gavião Arqueiro"];
+  
+   //método remove elemento pelo indice
+   vingadores.removeAt(3);
+  
+   //método imprimir a lista
+   print(vingadores);
+ }
+***************************************************************************
+void main() {
+ 
+ List<String> moradia = ["banheiro",
+                           "quarto",
+                           "Sala",
+                           "Escada"
+                           "Varanda",
+                           "Área",
+                         ];
+  
+   //método imprimir a lista
+   print(moradia);
+  
+   //método remove o último elemento
+   moradia.removeLast( );
+  
+   //método imprimir a lista
+   print(moradia);
+ }
+**************************************************************************
+void main() {
+ 
+ List<String> moradia = ["banheiro",
+                           "quarto",
+                           "Sala",
+                           "Escada"
+                           "Varanda",
+                           "Área",
+                           "Mezanino"
+                         ];
+  
+   //método imprimir a lista
+   print(moradia);
+  
+   //excluir as posições 2, 3 e 4 (intervalo entre 2 a 4)
+   moradia.removeRange(2, 5);
+  
+   //método imprimir a lista
+   print(moradia);
+ }
+***********************************************************************
+void main() {
+ 
+ List animal = [];
+  
+  animal.add("gatinho");
+  animal.add("cavalinho");
+  animal.add("ursinho");
+  animal.add("coalinha");
+  animal.add("doguinho");
+  animal.add("passarinho");
+  
+  print("O tamanho da lista é: ${animal.length}");
+  
+  print(animal);
+  
+ }
+**********************************************************************
+void main() {
+ 
+ List<String> meses = ["Jan", "fev", "mar", "abril", "jun", "jul"];
+  
+  //limpando a lista
+  meses.clear();
+  print(meses);
+  
+  //limpando a lista
+  meses.clear();
+  
+  meses.add("Jan");
+  meses.add("jul");
+  
+  print(meses);
+  
+  //vereficar se alista não vazia 
+  print(meses.isNotEmpty);
+  
+ }
+***********************************************************************
+void main() {
+ 
+ List<String> arvore = ["folhas", "caule", "raiz", "galhos", "jul"];
+  
+  //vereficar se existe o elemento
+  print(arvore.contains("caule"));
+  print(arvore.contains("folha"));
+  
+  arvore.sort();
+  print(arvore);
+  
+ }
+*********************************************************************
+void main() {
+ 
+ List<int> pares = [0, 2, 4, 6, 8];
+  print(pares);
+  
+  //inventar a ordem para decrescente
+  pares.sort((a, b) => b.compareTo(a));
+  
+  print(pares);
+  
+ }
+********************************************************************
+void main() {
+ 
+ List<int> numeros = List.generate(10000, (i) => (i++));
+  print(numeros);
+  
+ }
+*******************************************************************
+void main() {
+ 
+ List<int> numeros = List.generate(50, (i) => (i++));
+  print(numeros);
+  
+  //tabuada do 3
+  var num = 3;
+  
+ List<int> tabuada = List.generate(10, (i) => (i++)*num);
+  print(tabuada);
+  
+ }
+*****************************************************************
+void main() {
+ 
+ List<int> numeros = [2, 4, 6, 8, 10];
+ List<int> numerosaoquadrado = new List.empty(growable: true);
+  
+ numeros.forEach((num){
+   
+   numerosaoquadrado.add(num * num);
+   
+ });
+   
+   print(numerosaoquadrado);
+  
+}

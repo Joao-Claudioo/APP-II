@@ -1,0 +1,90 @@
+void main() {
+  double a = 10;
+  double b = 5;
+  
+  bool resultado = a != b;
+  print(resultado);
+
+  int n1 = 10;
+  int n2 = 8;
+  
+  print(n1+n2);
+  print(n1-n2);
+  print(n1/n2);
+  print(n1*n2);
+   
+  double a = 10.52;
+  double b =  7;
+  double resultado = a + b;
+  print(resultado);
+  
+  Data e hora
+  final DateTime hoje = DateTime.now();
+  print(hoje);
+  
+  dynamic valor = 10;
+  print(valor);
+  
+  valor = 'dez';
+  print(valor);
+  
+  Var versáril
+  var valor = 10.15;
+  var estado = false;
+  
+  print('$valor, $estado');
+  
+  Valor dinâmico
+  dynamic apelido = 'Geralt Lobo Branco';
+  dynamic idade = 43;
+  
+  print('$apelido, $idade');
+  
+  If e else
+  bool estoque = false;
+ 
+  if(estoque == true){
+    print('SIM, AINDA TEMOS RE8 NO ESTOQUE');
+  }else{
+    print('NÃO, NÃO TEMOS MAIS RE8 NO ESTOQUE');
+  }
+  
+  
+ 
+  Outra forma de um de baixo do outro
+  String nome = 'Chris Redfield';
+  int idade = 40;
+  double altura = 1.96;
+  
+  print('Nome: $nome\n'
+        //'Idade: $idade\n'
+        //'Altura: $altura\n');
+  
+  Valor de pi
+  const pi = 3.14;
+  
+  bool escolha = true;
+  
+  print("valor é "+ "$pi" + " $escolha");
+ 
+  
+  var nome = "João Claudio" ;
+  String email = "joao10claudo@gmail.com";
+    
+  int idade = 17;
+  
+  double altura = 1.80;
+  
+  Forma um de baixo do outro
+  print(nome);
+  print(altura);
+  print(email);
+  print(idade);
+  
+  CONCATENAÇÃO:
+  toString para onverter a idade de int para string
+  print(nome+ " "+idade.toString());
+  print(nome+ " $idade $altura");  
+  print(nome+ " $email");
+  
+}

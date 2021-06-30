@@ -1,0 +1,155 @@
+void main (){
+  
+  var nome = "Jacinto Sauro";
+  var idade = "30 anos";
+  var endereco = "Rua ABC, 26";
+  
+  
+  //Saída
+  print(nome);
+  print(idade);
+  print(endereco);
+  
+  
+  print("Nome: " +nome + " " +idade +" "+ endereco);
+  
+  
+  
+   int idade2 = 34;
+  print("idade: $idade2");
+  
+  
+  bool ligado = true;
+  print("Ligado: $ligado");
+  
+}
+*******************************************************************
+void main (){
+  //Variavies que guarda uma lista de números inteiro---Array
+  List<int> numerosinteiros = [10, 20, 30, 40];
+  print(numerosinteiros);
+  
+  //Variaveis que guarda dicionário com chave e valor em formato de texto ----Array
+  Map<String, String>nome_sobrenome = {"Bruna":"Souza", "Claudia":"Silva"};
+  print(nome_sobrenome);
+  
+  //Constantes (valores imutaveis)
+  const double pi = 3.1416;
+  print("O valor de PI é $pi");
+  
+} 
+*******************************************************************
+void main (){
+ 
+//criando a função
+ void exibirMensagem(){
+   
+   //definir o que terá na função
+   print("Desculpe, encontramos um erro. ");
+   
+ }
+  
+  //chammando a função
+  exibirMensagem();
+  
+} 
+******************************************************************
+void main() {
+  var operando1 = 10;
+  var operando2 = 7;
+
+  print(operando1 + operando2);
+  print(operando1 - operando2);
+  print(-operando1);
+  print(operando1 * operando2);
+  print(operando1 / operando2);
+  print(operando1 ~/ operando2);
+  print(operando1 % operando2);
+}
+*****************************************************************
+void main() {
+
+  //incrementando 
+  var prefixIncrement = 6;
+  
+  print(++prefixIncrement);
+  
+  
+  //teste lógico
+  var operand1 = 10;
+  var operand2 = 8;
+  
+  
+  print(operand1 > operand2);
+  print(operand1 < operand2);
+  print(operand1 >= operand2);
+  print(operand1 <= operand2);
+  
+  
+  var oper1 = 8;
+  var oper2 = 8;
+  
+  print(oper1 == oper2);
+  print(oper1 != oper2);
+  
+  
+  var op1 = 'a';
+  var op2 = 'b';
+  
+  print(oper1 == oper2);
+  print(oper1 != oper2);
+   
+}
+************************************************************
+void main(){
+
+ //incrementando 
+  var prefixIncrement = 6;
+  
+  print(++prefixIncrement);
+  
+  
+  //teste lógico
+  var operand1 = 10;
+  var operand2 = 8;
+  
+  
+  print(operand1 > operand2);
+  print(operand1 < operand2);
+  print(operand1 >= operand2);
+  print(operand1 <= operand2);
+  
+  
+  var oper1 = 8;
+  var oper2 = 8;
+  
+  print(oper1 == oper2);
+  print(oper1 != oper2);
+  
+  
+  var op1 = 'a';
+  var op2 = 'b';
+  
+  print(op1 == op2);
+  print(op1 != op2);
+}
+**************************************************************
+void main() {
+  double type1 = 5.0;
+  int type2 = 87;
+  String type3 = "educative";
+  bool type4 = true;
+  
+  print(type1 is int);
+  print(type2 is int);
+  print(type3 is String);
+  print(type4 is double);
+  print(type4 is! int);   
+}
+*************************************************************
+void main() {
+  var check = 33;
+  var compareCheck = (check < 75) && (check <= 8);
+
+  print(compareCheck);
+}

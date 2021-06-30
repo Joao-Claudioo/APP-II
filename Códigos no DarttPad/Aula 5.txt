@@ -1,0 +1,274 @@
+AULA 5 - DARTPAD
+
+void main() {
+  
+  List<int> numeros = new List.generate(10, (i) => i);
+  
+  print(numeros);
+  
+  Iterable<int> pares = numeros.where((num) => num % 2 == 0);
+  print(pares);
+  
+  Iterable<int> impares = numeros.where((num) => num % 2 != 0);
+  print(impares);
+  
+  print("Pares: ${pares.toList()}");
+  print("Impares: ${impares.toList()}");
+}
+*************************************************************************
+void main() {
+  
+  var user_pass = {'Usuario': 'Paulo', 'Senha':'@123##'};
+  print(user_pass);
+  
+  var usuario = new Map();
+  
+  usuario['usuario'] = 'admin';
+  usuario['senha'] = 'admin123';
+  
+  print(usuario);
+  
+  usuario['Email'] = 'fulano@zeze.com';
+  print(usuario);
+}
+*************************************************************************
+void main() {
+  
+  Map<int, String> atores = new Map();
+  //atribuir chave:valor
+  atores[1] = 'Sylvie';
+  atores[2] = 'Loki';
+  print(atores);
+  
+  //removendo elemento no map
+  atores.remove(2);
+  print(atores);
+}
+*************************************************************************
+void main() {
+  
+ var professores = {'Paulo': 'IOT', 'Rita': 'WEB I', 'Cristina': 'APP I'};
+  
+ print(professores);
+ 
+  //removendo o valor que começa com W ou qualquer outra letra
+ professores.removeWhere((key, value) => value.startsWith("W"));
+  
+  print(professores);
+}
+**************************************************************************
+void main() {
+  
+  Set<String> modeloPop = {"Corsa", "Uno", "Gol"};
+  Set<String> modeloExec = {"X5", "Corolla", "Pajero"};
+  Set<String> modelo = {};
+  
+  modeloPop.add("Classic");
+  modeloExec.add("BMW");
+  
+  //adicionando todos os modelos
+  modelo.addAll(modeloPop);
+  //adicionado todos os elementos
+  modelo.addAll(modeloExec);
+  
+  print(modelo);
+  
+  
+}
+************************************************************************
+oid main() {
+    Set<String> modelo = {"Corsa", "Uno", "Gol", "Classic", "X5", "Corolla", "Pajero", "BMW"};
+  
+  //Função length retorna número de elementos
+  print('Itens no set: ${modelo.length}');
+  
+  //Enviando objeto set para um list
+  List listModelo = List.from(modelo);
+  
+  //função length
+  print('Itens no List: ${listModelo.length}');
+  
+  //vereficação do tipo list
+  print(listModelo is List);
+  
+  //capturando o índice 3 da lista
+  print(listModelo[3]);
+  
+  
+}
+*********************************************************************
+Estrutura de construção
+
+void main() {
+  
+  double idade = 22;
+  
+  //comando condicional de tomada de decisão
+  if(idade < 18){
+    print('Menor de idade');
+  }else{
+    print('Maior de idade, portanto pode ter habilitação');
+  } 
+}
+********************************************************************
+void main() {
+  
+  String nome1 = "Sylvie";
+  String nome2 = "Loki";
+  
+  print(nome1 + nome2);
+  
+  if(nome1 == nome2){
+    print('nomes iguais');
+  }else{
+    print('nomes não conferem');
+  }
+}
+******************************************************************
+void main() {
+
+  int num1 = 10;
+  int num2 = 20;
+  
+  print(num1 + num2);
+  
+  
+  if(num1 > num2){
+    print('O n1 é valor' + num1.toString());
+  }else{
+    print('O n2 é valor: ' + num2.toString());
+  }
+    
+}
+*****************************************************************
+void main() {
+
+  int num1 = 7;
+  int num2 = 10;
+  int num3 = 3;
+  
+  double media;
+  
+  media = (num1 + num2 + num3)/3;
+  
+  
+  if(media >= 7){
+    print('Aprovado');
+  }else{
+    print('Reprovado' );
+  }
+   
+}
+****************************************************************
+void main() {
+
+  int num1 = 20;
+  int num2 = 30;
+  int num3 = 40;
+  
+  
+  if(num1 > num2 && num1 > num3){
+    print('O n1 é maior');
+  }else if(num2 > num1 && num2 > num3)
+  {
+    print('O n2 é maior');
+  }else
+  {
+    print("o n3 é amior");
+  }
+}
+***************************************************************
+void main() {
+
+  int idade = 17;
+  
+  if(idade <= 12){
+    print("Criança"); 
+  } else if (idade <= 18); {
+    print("Adolescente");
+  } else if (idade <= 20) {
+    print("Jovem");
+  } else if (idade <= 30) {
+    print("Adulto");
+  }else{
+    print("Idosa");
+  }
+}
+***************************************************************
+void main() {
+
+  int idade = 17;
+  
+  if(idade <= 12){
+    print("Criança"); 
+  } else if (idade <= 18) {
+    print("Adolescente");
+  } else if (idade <= 20) {
+    print("Jovem");
+  } else if (idade <= 30) {
+    print("Adulto");
+  } else {
+    print("Idosa");
+  }
+}
+****************************************************************
+void main() {
+  
+  String usuario = "Beto";
+  String senha = "123456";
+  
+  //Média de decisão
+  if(usuario == "Brian" && senha == "123456"){
+    print("Usuário logado");   
+  }else{
+    print("Erro ao logar");
+  }
+}
+**************************************************************
+void main() {
+  
+  int menu = 2;
+  String usuario = "teste";
+  String senha = "123";
+  
+  switch(menu){
+      
+    case 1:
+    print("Cadastro de clientes");
+      
+      if(usuario == 'teste' && senha == '123'){
+        print("BEM VINDO ao cadastro de clientes");
+      }else{
+        print("Verefique usuario e senha");
+      }
+      
+      break;
+      
+        case 2:
+      print("Cadastro de fornecedor");
+      
+      if(usuario == "teste" && senha == "123"){
+        
+        print("BEM VINDO ao cadastro de fornecedores");
+      }else{
+        print("Verefique usuario e senha");
+      }
+      
+      break;
+      
+        case 3:
+      print("Cadastro de Produto");
+      
+      if(usuario == "teste" && senha == "123"){
+        
+        print("BEM VINDO ao cadastro de Produtos");
+      }else{
+        print("Verefique usuario e senha");
+      }
+       break;
+      
+    default:
+      
+      print("Menu inválido");
+  }
+}

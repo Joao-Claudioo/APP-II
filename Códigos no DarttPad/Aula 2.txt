@@ -1,0 +1,93 @@
+void main() {
+  
+  List<int> numerosintieros = [10, 20, 30, 40];
+  print(numerosinteiros);
+  
+  Map<String, String>nome_sobrenome = {"Bruna":"Souza", "Claudia":"Silva"};
+  print(nome_sobrenome);
+  
+  const double pi = 3,14;
+  print("O valor de PI é $pi")
+}
+*******************************************************************************
+void main() {
+  
+ //Variaveís dinâmicas (neste momento é do tipo inteiro pois recebeu o valor 10)
+ dynamic x = 10;
+ print(x);
+******************************************************************************
+[16:00, 6/28/2021] João Claudio😑: void main() {
+  
+  var operado1 = 10;
+  var operado2 = 3;
+  
+  print(operado1 + operado2);
+  print(operado1 - operado2);
+  print(-operado1);
+  print(operado1 * operado2);
+  print(operado1 / operado2);
+  print(operado1 ~/ operado2);
+    print(operado1 % operado2);
+  
+}
+******************************************************************************
+void main() {
+  
+  var prefixIncrement = 6;
+  
+  print(++prefixIncrement);
+  
+  var operand1 = 10;
+  var operand2 = 8;
+  
+  print(operand1 > operand2);
+  print(operand1 < operand2);
+  print(operand1 >= operand2);
+  print(operand1 <= operand2);
+     
+}
+*****************************************************************************
+void main() {
+  
+  //Incrementando
+  var prefixIncrement = 6;
+  
+  print(++prefixIncrement);
+  
+  //Teste lógico
+  var operand1 = 10;
+  var operand2 = 8;
+  
+  print(operand1 > operand2);
+  print(operand1 < operand2);
+  print(operand1 >= operand2);
+  print(operand1 <= operand2);
+  
+  var oper1 = 8;
+  var oper2 = 8;
+  
+  print(oper1 == oper2);
+  print(oper1 != oper2);
+  
+  
+  var op1 = 'a';
+  var op2 = 'b';
+  
+  print(op1 == op2);
+  print(op1 != op2);
+   
+}
+******************************************************************************
+void main() {
+  
+  double type1 = 8.6;
+  int type2 = 56;  
+  String type3 = "educative";
+  bool type4 = true;
+  
+  print(type1 is int);
+  print(type2 is int);
+  print(type3 is String);
+  print(type4 is double);
+  print(type4 is! int);
+}
