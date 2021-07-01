@@ -1,0 +1,223 @@
+void main() {
+  
+  for(int i=0; i<5; i++){
+    var result = i % 2;
+    
+    if(result == 0){
+      print("$i - Par");
+    }else{
+      print("$i - impar");
+    }
+  }
+  //trabalhando com operador ternário
+  for(int i=0; i<5; i++ ){
+    var result = i % 2 == 0 ? print("$i - par") : print("$i - impar");
+  }
+  
+  
+}
+************************************************************************************
+void main() {
+  
+  double altura = 1.75;
+ 
+  if(altura > 1.80){
+    print("Alto");
+  }else if(altura > 1.60 && altura < 1.80){
+    print('Média estatura');
+  }else{
+    print("Baixa");
+  }
+  
+  (altura > 1.75)
+    ? print('Alto')
+    : (altura >= 1.60 && altura <= 1.80)
+      ? print("Média estatura")
+      : print('baixa');
+  
+  // ?- true
+  // :- false
+}
+***********************************************************************************
+void main() {
+  
+  List<String> nome = ['Edson Arantes','Diego Aemando'];
+  
+  if(nome.elementAt(0)=='Edson Arantes'){
+    print('Pelé');
+  }else if(nome.elementAt(1)=='Diego Armando'){
+    print('Maradona');
+  }
+  
+  (nome.elementAt(1) == 'Diego Armando')
+    ?print('Maradona')
+  :(nome.elementAt(0) == 'Edson Arantes')
+  ?print('Pelé')
+  :print('Qualquer outro');  
+  
+}
+************************************************************************************
+Operação com ternário
+
+void main() {
+//declaração de forma simplificada da estrutura if/else no dart
+  print(operadorTernario(10));
+  
+}
+
+//? caso verdadeiro
+// : caso falso 
+  String operadorTernario(num numero){
+    return (numero > 0)
+      ? "O número $numero é positivo !!!"
+      : "O número $numero é negativo!!!";
+  }
+***********************************************************************************
+void main() {
+  
+  for(int i=0; i<5; i++){
+    var result = i % 2;
+    
+    if(result == 0){
+      print("$i - Par");
+    }else{
+      print("$i - impar");
+    }
+  }
+  //trabalhando com operador ternário
+  for(int i=0; i<5; i++ ){
+    var result = i % 2 == 0 ? print("$i - par") : print("$i - impar");
+  }
+  
+  
+}
+***********************************************************************************
+
+void main() {
+  
+  double altura = 1.75;
+ 
+  if(altura > 1.80){
+    print("Alto");
+  }else if(altura > 1.60 && altura < 1.80){
+    print('Média estatura');
+  }else{
+    print("Baixa");
+  }
+  
+  (altura > 1.75)
+    ? print('Alto')
+    : (altura >= 1.60 && altura <= 1.80)
+      ? print("Média estatura")
+      : print('baixa');
+  
+  // ?- true
+  // :- false
+}
+************************************************************************************
+void main() {
+  
+  List<String> nome = ["Edson Arantes", "Diego Armando"];
+  
+  
+  if(nome.elementAt(0) == "Edson Arantes"){
+    print("Pelé");
+    
+  }else if(nome.elementAt(1) == "Diego Armando"){
+    print("Maradona");
+  }
+  
+  (nome.elementAt(1) == "Diego Armando")
+    ? print("Maradona")
+    : (nome.elementAt(0) == "Edson Arantes")
+    ?   print("Pelé")
+    :  print("Qualquer outro");
+}
+************************************************************************************
+void main() {  
+
+ int menu = 1;
+  
+  String usuario = "Bianca";
+  String senha = "123";
+  
+  switch(menu){
+    case 1:
+    print("Meu cadastro de cliente");
+    print("Informe seu usuário e senha");
+    if(usuario == "Bianca" && senha == "123"){
+      print("Pode cadastrar Cliente");
+    }
+    else{
+      print("Usuário e senha Incorretas");
+    }
+    
+    break;
+    default:
+      print("Não possui esse menu no sistema");
+    
+  }
+}
+**************************************************************************************
+void main() {  
+
+ double a = 12;
+ double b = 11;
+ String operador = '/';
+  
+ switch(operador){
+    
+     case '+' :
+     print(a + b);
+     break;
+     
+     case '-' :
+     print(a - b);
+     break;
+     
+     case '*' :
+     print(a * b);
+     break;
+     
+     case '/' :
+     print(a / b);
+     break;
+     
+     default:
+     print("Sem cálculo");
+ }   
+  
+}
+*************************************************************************************
+void main() {  
+
+ var lista = [ 52, 6, 55, 12];
+ 
+  try{
+    for(int i=0; i<5; i++){
+      print(lista[i]);
+    }
+  }catch(erro){
+    print('Algo de errado aconteceu' + 'ao imprimir a lista');
+    print('Erro X-X: $erro');
+  }
+  
+    print('Continuando o programa..........');
+}
+************************************************************************************
+void main() {  
+ 
+  try{
+    
+    int result = int.parse("Doze") ~/ int.parse("Quatro");
+    
+    print("O resultado é $result");   
+  
+  }catch(e){
+    print('A exceção lançada foi: $e');
+  }finally{
+    print('A clausula Finally sempre será executada');
+  }  
+}
+
+
