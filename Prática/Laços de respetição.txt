@@ -1,0 +1,38 @@
+1. Dada uma variável i iniciada com valor 0 que é incrementada ao final de cada loop de um laço de repetição. Qual é a condição de execução deste laço quando o mesmo tem a função de imprimir todos os números de 0 a 100?
+void main() {
+ 
+  //laço de reptição
+  for (int indice = 0; indice < 101; indice++){
+    print("Valor $indice"); 
+  }  
+}
+
+2. Crie um programa que leia uma lista com 10 índices, imprima na tela todos os números e retorne o maior deles.
+void main() {
+ 
+   //incremento de 5 em 5
+   for(int i = 1200; i>=80; i-=5)
+   {
+    print(i);
+  }
+  
+}
+
+3. Suponha que você esteja desenvolvendo um programação que realiza a multiplicação entre dois números inteiros e repita esta operação até chegar ao valor de 1200. Exibir as operações efetuadas na tela.
+void main() {
+ 
+ 
+  for (int indice = 0; indice < 11; indice++){
+    print("Voltas n° $indice"); 
+  }
+  
+  
+  int i = 10;
+  
+  while(i <=10){
+    
+    print("O maior número é:");
+    print(i);
+    i++;
+  }
+ }
