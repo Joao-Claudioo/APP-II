@@ -1,0 +1,235 @@
+1. Desenvolver um programa em Dart que verifique se um número é positivo ou negativo.
+void main() {
+int positivo = 0;
+
+if(positivo >=0){
+print('Positivo');
+}
+else if (positivo <= -1)
+{
+print('Negativo');
+
+}
+else{
+print('Positivo ou Negativo');
+}
+}
+***********************************************************************************************
+2. Desenvolver um programa em Dart que compare dois números e diga se o primeiro é maior, menor ou igual ao segundo número.
+  void main() {
+  
+  int num1 = 8;
+  int num2 = 6;
+  
+   if(num1 > num2){
+  print('Número 1 é menor');
+}else{
+  print("Número 2 é maior");
+}
+  if(num1 == num2){
+  print('Números são iguais');
+}else{
+  print("Números são diferentes");
+}
+   
+}
+*************************************************************************************************************************************
+3. Desenvolver um programa que receba três variáveis: a, b e c. Sabe-se que a = 2; b = 4; c = 5. Calcule as seguintes fórmulas:
+a)	calculo = a + b * c;
+b)	calculo 2 = b / a * c;
+E mostre os resultados na tela e escreva se são iguais os resultados.
+void main() {
+  
+  var a = 2;
+  var b = 4;
+  var c = 5;
+  
+  print(a + b * c);
+  print(b /a * c);  
+  
+  print("Resultados diferentes");
+}
+***********************************************************************************************************************************************
+4. Desenvolver um programa em Dart que calcule a média de duas notas de um aluno e verifique se a média é maior ou igual a 6 escreva “Aprovado” e caso contrário “Reprovado”
+void main() {
+ 
+  int nota1 = 8;
+  int nota2 = 6;
+  double media;
+  
+  media = (nota1+nota2/2);
+  
+  if(media >= 6){
+    print('Aprovado');
+  }else{
+    print('Reprovado');
+  }
+}
+**************************************************************************************************************************************************************************************
+5. Desenvolver um programa em Dart que calcule a média de 3 notas de um aluno. Verifique se a média for maior ou igual a 7 o aluno está aprovado, caso a média esteja entre 7 a 6 informar Exame e caso contrário Reprovado.
+void main() {
+ 
+  int nota1 = 8;
+  int nota2 = 5;
+  int nota3 = 7;
+  double media;
+  
+  media = (nota1 + nota2 + nota3)/3;
+  
+   if(media >= 7){
+    print("Aluno aprovado");
+  }else if(media >= 6) {
+     print("Aluno em Exame");
+   }if(media < 6){
+     print("Aluno reprovado!");
+   }   
+}
+*************************************************************************************************************************************************************************************************************************************
+6. Desenvolver um programa em Dart que calcule a média de 4 notas de um aluno. Verifique se a média for maior ou igual a 7 o aluno está aprovado e caso contrário Reprovado. Informe ainda o conceito de acordo com a tabela: A - 10 - 9, B - 8.9 - 8, C -
+7.9 a 7, F - menor que 7
+void main() {
+ 
+  int num1 = 7;
+  int num2 = 9;
+  int num3 = 10;
+  int num4 = 10;
+  double media;
+  
+  media = (num1+num2+num3+num4/2);
+  
+  if(media >= 7){
+    print('Aprovado');
+  }else{
+    print('Reprovado');
+  }
+}
+********************************************************************************************************************************************************************************************************************************************************************
+7. Desenvolver um programa em Dart que calcule o índice da massa corporal. IMC = peso (kg) / altura (m) x altura (m). Verifique a seguinte tabela e escreva a classificação:
+void main() {
+  
+  print(80);//peso
+  double peso = 80;
+  
+  print(1.80);//altura
+  double altura = 1.80;
+  
+
+  double imc = peso / (altura * altura);
+ 
+ 
+  print('Seu IMC é  ' + imc.toStringAsFixed(2)); 
+  
+  if(imc < 16){
+    print("Magreza Grave");
+  }else if(imc < 17);
+    print("Magreza Moderna");
+  if(imc < 18.5){
+    print("Magreza Leve");
+  }else if(imc < 25){
+    print("Saúdavel");
+  }else if(imc < 30){
+    print("Sobrepeso");
+  }else if(imc < 35){
+    print("Obesidade-GRAU I");
+  }else if(imc < 40){
+    print("Obesidade-GRAU II (SEVERA)");
+  }else if(imc >= 40){
+    print("Obesidade-GRAU III (Mórbida)");
+  }
+                
+} 
+*****************************************************************************************************************************************************************************************************************************************************************************************************************
+8. Desenvolver um programa em dart que valide se o saldo da conta corrente é maior ou igual ao valor que o cliente quer sacar. Caso tenha saldo calcule o novo saldo subtraindo o valor do saque e escreva “Saque efetuado com sucesso!”, caso contrário escreva “Saldo indisponível”. Mostre o saldo final
+void main() {
+ 
+  double num1 = 600;
+  double num2 = 500;
+  double media;
+  
+  media = (num1- num2);
+  
+  if(media>=600){
+    print('Saque efetuado com sucesso!');
+  }else{
+    print('Saque indisponivel');
+  }
+}
+*******************************************************************************************************************************************************************************************************************************************************************************************************************
+9. Desenvolva um programa que calcule a idade e diga se qual a categoria de um curso de natação: Criança 0 a 12 anos, Jovem de 13 a 21 anos, Adulto 22 a 59 anos e Terceira Idade 60 anos ou mais.
+void main() { 
+ 
+ int idade = 47;
+  
+  if(idade <=12){
+    print('criança');
+  }
+  else if (idade <=21)
+  {
+    print('Jovem');
+  }
+  else if (idade <=59)
+  {
+    print('Adulto');
+  }
+  else if (idade >=60)
+  {
+    print('Terceira Idade');
+  }
+  else{
+    print('senhor de idade avançado');
+  }
+  
+}
+**************************************************************************************************************************************************************************************************************
+10. Desenvolva um programa em Dart que informe qual o tamanho que a cliente deve usar baseado no seu peso: P - menor que 60 kg, M - 61 a 74 e G - 75 a 85 e GG acima de 86 kg.
+void main(){
+
+   //P menor que 60kg
+  //M 61 a 74
+  //G 75 A 85
+  //GG acima de86g
+  
+
+
+(int tamanho){
+    if(tamanho >= 60 && tamanho <= 60){
+        print("Tamanho P");
+    }
+    else if(tamanho >= 61 && tamanho <= 74){
+        print("Tamanho M");
+    }
+    else if(tamanho >= 75 && tamanho <= 85){
+        print("Tamanho G");
+    }
+    else if(tamanho >= 86 && tamanho <= 110){
+        print("Tamanho GG");
+    }
+
+
+    print(tamanho);
+     print(85);
+    print("%d &tamanho");
+  
+};
+}
+
+***************************************************************************************************************************************************************************************
+11.	Desenvolva um programa em Dart que informe qual o novo salário do funcionário. O valor do dissídio 4%. O funcionário somente vai receber caso tenha 1 ou mais anos de empresa. Calcule o novo salário e mostre na tela e caso não tenha direito informe “Funcionário com menos de 1 ano de empresa”.
+
+void main() {
+  
+  double novoSalario = 0;
+  print('Digite o salário atual: R\$:1.350  ');
+  double salarioAtual =(1.350);
+  
+  if (salarioAtual <= 1.350)
+    (novoSalario = 1.500 * salarioAtual);
+  else
+    (novoSalario = 1.500 * salarioAtual);
+ 
+  print('Seu novo salário é: R\$:' + novoSalario.toStringAsFixed(2));
+  
+  print("só irá receber se tiver 1 ano ou mas de empresa");
+  print('caso contrario,infelizmente ficará de fora');
+}
+
