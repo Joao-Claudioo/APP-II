@@ -1,0 +1,157 @@
+void main() {
+  
+ String str = "Olá turma";
+  //seu objeto não está vazio
+  print(str.isNotEmpty);
+}
+-------------------------------------------------
+void main() {
+  
+ String nome_do_usuario = "João Blade";
+ //essa propriedade retorna a quantidade de caracteres, ou seja, tamanho.
+ print("A string possui ${nome_do_usuario.length} caracteres");
+  
+ //descobrir se ou string possui uma outra como parte de seu conteúdo, caso a encontre retornará, true, caso contrário retrona, false.
+  String conteudo = "Essa turma é uma bagunça";
+  print(conteudo.contains("String"));
+  
+  //encontra se a string começa ou não com aquela palavra.
+  String texto = "O Google é um motor de busca mais famoso do mundo";
+  print(texto.startsWith("O"));
+  
+   //encontra se a string começa ou não com aquela palavra.
+  String a = "O Google é uma ferramente de código aberto";
+  print(texto.endsWith("código aberto")); 
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
+void main() {
+ 
+  String conteudo = "O Google é um  motor de pesquisa";
+  String prefixo = "O bing é um ";
+  String sufixo = conteudo.substring(11, 26);
+  print("$prefixo $sufixo";)
+  
+}
+-----------------------------------------------------------
+void main() {
+ 
+  String turma = "Truma de flutter";
+  String turno = "galera da tarde";
+  String frase = "lute pelo seus sonhos";
+  
+  //toUpperCase traz em maíusculo.
+  print("${turma.toUpperCaser()}\n  $turno\n $(frase.toLowerCase()}");
+  
+  //retira espaços do inicio e final de string
+  String str = '\n\n\t \t Só o que é bom dura o bastante para se tornar inesquecível.';
+  String result = str.trim();
+  print(result);
+}
+---------------------------------------------------------------------------------------------
+void main() {
+ 
+ String mensagem = "A persistrência é io caminho do êxito";
+ //se tiver elementos retorna false
+  
+ //tira o espaço em branco no final
+ print("*" +mensagem.trimRight() +"*");
+ //tira do início o espaço em branco
+ print("*" +mensagem.trimLeft() +"*");
+ //retira o espaço em branco
+ print("*" +mensagem.trim() +"*");
+
+}
+---------------------------------------------------------------------------------------------
+void main() {
+ 
+  StringBuffer sb = new StringBuffer('Website');
+  
+  sb.write('vamos');
+  sb.writeCharCode(45);
+  sb.writeln('aprender');
+  sb.write('Tags: ');
+  sb.writeAll({'Dart', 'Flutter'}, ',');
+  
+  print('length: ${sb.length}');
+  print('length: ${sb.isEmpty}');
+  print('IsNoEmpty: ${sb.isNotEmpyt}');
+  print('------------ ${sb.toString()} \n-------------');
+  
+  print('Clear the buffer');
+  sb.clear();
+}
+-----------------------------------------------------------------
+void main() {
+ 
+ String mensagem = "A persistrência é io caminho do êxito";
+ //se tiver elementos retorna false
+  
+ //tira o espaço em branco no final
+ print("*" +mensagem.trimRight() +"*");
+ //tira do início o espaço em branco
+ print("*" +mensagem.trimLeft() +"*");
+ //retira o espaço em branco
+ print("*" +mensagem.trim() +"*");
+
+}
+-------------------------------------------------------------------
+void main() {
+ 
+  //laço de reptição
+  for (int indice = 1; indice < 10; indice++){
+    print("Voltas n° $indice"); 
+  }
+  for(int i = 0; i < 5; i++){
+    print(i);
+  }
+  for(int i = 0; i <= 10; i+=2){
+    print(i);
+  } 
+  for(int i = 120; i<=80; i-=5){
+    print(i);
+  }
+    
+}
+-----------------------------------------------------
+void main() {
+ 
+  for(int i = 120; i<=80; i-=5){
+    print(i);
+  }
+  for(int i = 0; i <= 50; i+=5){
+    print(i);
+  }
+  int soma = 0;
+  String result = '0';
+  
+  for(int i = 1; i <= 10; i++){
+    result += ' ${i + 1}';
+    soma = soma + i + 1;
+    print('$result = $soma');
+  }
+    
+}
+------------------------------------------
+void main() {
+ 
+ const List numeros_primos = [2,3,5,7,11];
+  
+  //in usado para percorrer a propriedade dos objetos
+ for(int num in numeros_primos){
+   print(num);
+ }
+  
+  int controlador = 1;
+  while (controlador < 10){
+    print("Volta n° $controlador");
+    controlador++;
+  }
+  
+  int i = 0;
+  
+  while(i <=10){
+    print(i);
+    i++;
+  }
+}
+-----------------------------------------------------------

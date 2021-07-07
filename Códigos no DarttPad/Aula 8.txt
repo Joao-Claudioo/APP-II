@@ -1,0 +1,160 @@
+void main(){
+  
+  calcularSoma(10.0, 15.5);
+  double resMult =calcMult(9.5, 3.2);
+  print(resMult);
+ 
+  printIntro();
+ 
+}
+
+double calcularSoma( double a, double b) {
+  double resultado = a + b;
+  print(resultado); 
+  
+}
+
+
+double calcMult(double c, double b){
+  double resposta = c * b;
+  return resposta;
+}
+
+
+void printIntro(){
+  print("Sejam todos bem vindos!!!");
+  print("TURMA TARDE");
+}
+
+--------------------------------------------
+
+void main(){
+  //função com parâmetro e retorno
+  print(calcAreaCirculo(5.0));
+ 
+}
+
+//função e declarada sempre fora da estrutura principal
+double calcAreaCirculo(double raio) => 3.14 * raio * raio;
+ * raio;
+----------------------------------------------------
+
+void main(){
+  
+  printIntro();
+ 
+  printIntro();
+  printIntro();
+}
+
+//função sem parâmetro
+void printIntro(){
+  print("sejam bem vindos");
+  
+}
+
+--------------------------------------------------
+//função sem retorno
+
+void main(){
+  
+  
+calcSoma(50.3, 25.2);
+  
+}
+
+//escopo da função 
+void calcSoma(double f, double t){
+  
+  double resultado = f - t;
+  
+  //irá imprimir a variável
+  print(resultado);
+}
+----------------------------------------------
+
+//função sem retorno
+
+void main(){
+  
+  
+escreverNome("Andreza Barcaro", 34);
+  
+}
+
+//escopo da função 
+void escreverNome(String nome, int idade){
+  
+  //irá imprimir a variável
+  print("O nome é: " +nome.toString());
+  print("A idade é: " +idade.toString());
+}
+
+------------------------------------------
+
+
+//função sem retorno
+
+void main(){
+  
+  
+calCalculadora(10.0, 10.0);
+  
+}
+
+//função sem retorno
+void calCalculadora(double v1, double v2){
+  
+  double somar = ( v1+v2);
+  double menos = (v1-v2);
+  double dividir =(v1/v2);
+  double multi =(v1*v2);
+  
+  
+  print("$somar $menos $dividir $multi");
+}
+
+-------------------------------------------------
+
+//função com retorno
+
+void main(){
+  
+  //resultado jogando para dentro da variável para mostrar na console
+  double resMult = calcMult(30.0, 90.0);
+  print(resMult);
+  
+}
+
+//como temos double o tipo e com retorno 
+double calcMult(double g, double h){
+  
+  double res = g * h;
+  
+  return res;
+}
+-----------------------------------------------
+//função com retorno
+const double pi = 3.1415;
+
+void main(){
+  
+  print('Area do circulo: ${calcAreaCirculo(9.6)}\n'
+       'Area do retângulo: ${calcAreaReatangulo(5.4, 3.2)}\n'
+       'calcAreaTrianguloRetangulo: ${calcAreaTrianguloRetangulo(2.4, 4.9)}');
+
+}
+
+//como temos double o tipo e com retorno 
+double calcAreaCirculo(raio){
+  return pi * (raio * raio);
+}
+
+
+double calcAreaReatangulo(double base, double altura){
+  return base * altura;
+}
+
+double calcAreaTrianguloRetangulo(double base, double altura){
+  return (base * altura) / 2;
+}
