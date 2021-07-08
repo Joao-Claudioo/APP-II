@@ -1,0 +1,165 @@
+class Casa {
+  //atributos da classe (propriedade da classe)
+  int numero = 16;
+  String cor = "Roxo";
+  int quadra = 19;
+  String tamanho = "Grande";
+}
+
+void main() {
+  Casa home = new Casa();
+  
+    print(home.cor);
+    print(home.numero);
+    print(home.quadra);
+    print(home.tamanho);
+   
+}
+******************************************************
+class Casa {
+  //atributos da classe (propriedade da classe)
+  int numero = 16;
+  String cor = "Roxo";
+  int quadra = 19;
+  String tamanho = "Grande";
+}
+
+void main() {
+  //instanceando objetos
+  Casa home = new Casa();
+  Casa beachHome = Casa();
+  
+  
+  //imprimindo os atributos dos objetos
+  print('${home.cor} ${home.numero}');
+  print('${beachHome.cor} ${beachHome.numero}');
+ 
+}
+*****************************************************
+class Casa {
+  //atributos da classe (propriedade da classe)
+  int numero;
+  String cor;
+}
+
+void main() {
+  //instanceando objetos
+  Casa home = new Casa();
+  Casa beachHome = Casa();
+  
+  //para atribuir valores diferentes aos objetos 
+  
+  home.cor = "Roxo";
+  home.numero = 111;
+  
+  
+  //imprimindo os atributos dos objetos
+  print('${home.cor} ${home.numero}');
+  print('${beachHome.cor} ${beachHome.numero}');  
+}
+*******************************************************
+class Animal {
+  //atributos da classe (propriedade da classe)
+  String nome;
+  double peso;
+
+//Animal(this.nome, this.peso);
+void comer(){
+  print("$nome comeu!");
+}
+void fazerSom(){
+  print("$nome fez som!");
+}
+}
+void main(){
+  Animal cachorro1 = Animal();
+  cachorro1.nome = "RexDinho";
+  cachorro1.peso = 8.40;
+  
+  Animal gato = Animal();
+  gato.nome = "Fufu";
+  gato.peso = 4.0;
+  
+  print(cachorro1.nome);
+  print(cachorro1.peso);
+  
+}
+*********************************************************
+class Animal {
+  //atributos da classe (propriedade da classe)
+  String nome;
+  double peso;
+
+//Animal(this.nome, this.peso);
+void comer(){
+  print("$nome comeu!");
+}
+void fazerSom(){
+  print("$nome fez som!");
+}
+}
+void main(){
+  Animal cachorro1 = Animal();
+  cachorro1.nome = "RexDinho";
+  cachorro1.peso = 8.40;
+  
+  Animal gato = Animal();
+  gato.nome = "Fufu";
+  gato.peso = 4.0;
+  
+  print(cachorro1.nome);
+  print(cachorro1.peso);
+  
+  print(gato.nome);
+  print(gato.peso);  
+  
+  cachorro1.fazerSom();
+  cachorro1.comer();
+  
+  gato.fazerSom();
+  gato.comer();
+}
+***********************************************
+//nome da classe
+class Usuario{
+  String nome = "Geralt";
+  String senha = "12347";
+  
+  //método para autenticar
+  void ususarioAutenticado(){
+    if(nome == "Geralt" && senha == "12347"){
+      print("Usuario logado");
+    }else{
+      print("Usuario não está logado");                          
+  }
+}
+}
+  void main(){
+    Usuario a = new Usuario();//primeiro objeto
+    
+    //chamando oa método para imprimir
+    a.ususarioAutenticado();
+  }
+*******************************************************
+class Aninmal{
+  String _nome;
+  String _cor;
+
+//metodo
+  Animal(String paramNome, String paramCor){
+  this._nome = paramNome;
+  this._cor = paramCor;
+}
+
+  String get getNome{
+    return this._nome;
+  }
+  String get getCor{
+    return this._cor;
+  }
+}
+
+void main(){
+  Animal dog = Animal("Preguiça", "Marrom e amarelo queimado");
+  print("Animal: ${dog.getNome} | ${dog.getCor}");  
+}
