@@ -1,0 +1,203 @@
+1. Escreva uma função que receba dois números inteiros retorne o menor número.
+int compara(int a, int b);
+int main(){
+ int n1, n2, res;
+ printf("Digite dois valores separados por espaço:\n");
+ scanf("%d %d", &n1, &n2);
+ 
+ res = compara(n1, n2);
+ printf("o menor número eh: %d\n", res);
+ return 0;
+}
+ 
+int compara(int a, int b){
+ if (a > b) {
+ return b;
+ }else{
+ return a;
+ }
+}
+
+2. Faça uma função que recebe por parâmetro um valor inteiro e positivo e retorna o valor lógico Verdadeiro caso o valor seja primo e Falso em caso contrário.
+int Primo(int numero){
+    int i=0;
+    int p=1;
+
+    for(i=2;i<numero;i++){
+        if(numero%i==0){
+            p=0;
+        }
+    }
+    return p;
+}
+
+int main(){
+    int Num,Resultado;
+    printf("Digite um numero:");
+    scanf("%d",&Num);
+
+    Resultado=Primo(Num);
+
+    //printf("%d\n",Resultado);
+
+    if(Resultado == 1){
+        printf("Numero primo.\n");
+    }
+    else{
+        printf("Numero nao e primo.\n");
+    }
+
+    getchar();
+    return 0;
+}
+
+3. Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou negativo. A função deve retornar um valor booleano.
+numero(int n)
+{
+
+    if(n>0)
+    printf("o numero %d é positivo\n",n);
+    else
+    printf("o numero %d é negativo\n",n);
+}
+main ()
+{
+    numero(2);
+    numero(-32);
+    numero(1);
+}
+
+4. Faça uma função que leia um número não determinado de valores positivos e retorna a média aritmética dos mesmos.
+float calc_media()
+{
+ float soma, num, media, i;
+ 
+ soma = 0;
+ i = 0;
+ num = 1;
+ 
+ while(num != 0)
+ {
+ printf("\nDigite um numero positivo");
+ scanf("%f", &num);
+ 
+ while(num < 0)
+ {
+ printf("\nNumero invalidao!");
+ printf("\nDigite um numero positivo novamente");
+ scanf("%f", &num);
+ }
+ 
+ soma += num;
+ 
+ i++;
+ }
+ 
+ media = soma/(i-1);
+ 
+ return media;
+}
+main()
+{
+ float r;
+ 
+ r = calc_media();
+ 
+ printf("O valor medio digitado foi %f",r); 
+ getche();
+}
+
+5. Escreva uma função que recebe, por parâmetro, receba 2 valores inteiros e positivo e retorna o somatório desse valor.
+6. Faça uma função que recebe a idade de um nadador por parâmetro e retorna , também por parâmetro, a categoria desse nadador de acordo com a tabela abaixo (imagem2):
+void Categoria(int idade){
+    if(idade >= 5 && idade <= 7){
+        printf("Infantil A\n");
+    }
+    else if(idade >= 8 && idade <= 10){
+        printf("Infantil B\n");
+    }
+    else if(idade >= 11 && idade <= 13){
+        printf("Juvenil A\n");
+    }
+    else if(idade >= 14 && idade <= 17){
+        printf("Juvenil B\n");
+    }
+    else if(idade >= 18){
+        printf("Adulto\n");
+    }
+    else{
+        printf("Sem categoria\n");
+    }
+}
+
+int main(){
+    int Idade;
+
+    printf("Digite a sua idade:");
+    scanf("%d",&Idade);
+
+    Categoria(Idade);
+
+    return 0;
+}
+
+7. Faça uma função que recebe um valor inteiro e verifica se o valor é par. A função deve retornar 1 se o número for par e 0 se for ímpar
+int funcao (int valor){ 
+
+  int op;
+
+  if(valor %2 = 0){  
+
+      op = 1;
+
+  } else {  
+
+     op = 0;
+
+  }
+
+ return  op;  
+
+} 
+
+8. Fazer um programa que receba 2 números e informe:
+  a) A soma dos números;
+  b) O produto do primeiro número pelo quadrado do segundo;
+  c) O quadrado do primeiro número;
+  d) O triplo do dobro da soma dos dois números
+  e) A metade do triplo do dobro da soma dos dois números
+  f) O módulo do primeiro número.
+
+9-. Faça um programa que leia dois valores e imprima:
+  a) se o primeiro valor for menor que o segundo, a lista de valores do primeiro até
+o segundo;
+  b) se o primeiro valor for menor que o segundo a lista de valores do segundo até
+o primeiro em ordem decrescente;
+  c) se ambos forem iguais a mensagem "valores iguais".
+
+void main() {
+int primeiro_valor;
+int segundo_valor;
+int i, passo;
+
+printf("Por favor informe o primeiro valor ");
+scanf("%i",&primeiro_valor);
+printf("Por favor informe o segundo valor");
+scanf("%i",&segundo_valor);
+if (primeiro_valor == segundo_valor){
+   printf("valores iguais\n");
+}else {
+  if (primeiro_valor < segundo_valor) {
+    printf("O primeiro valor é menor que o segundo \n");
+    for(i=primeiro_valor;i<=segundo_valor;i++){
+      printf("%i \n",i);
+    };
+    
+  } else {
+    printf("O segundo valor é menor que o primeiro\n");
+    for(i=primeiro_valor;i>=segundo_valor;i--){
+      printf("%i \n",i);
+    };
+  };
+};
+}
